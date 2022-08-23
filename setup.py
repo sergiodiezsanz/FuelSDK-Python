@@ -2,7 +2,7 @@ from os.path import dirname, join, realpath
 from setuptools import setup
 
 
-__version__ = '1.3.1'
+__version__ = '1.3.2'
 
 
 with open('README.md') as f:
@@ -11,19 +11,18 @@ with open('README.md') as f:
 with open(join(dirname(realpath(__file__)), 'requirements.txt')) as f:
     PACKAGE_INSTALL_REQUIRES = [line[:-1] for line in f]
 
-print(PACKAGE_INSTALL_REQUIRES)
 
 setup(
     version=__version__,
-    name='Salesforce-FuelSDK-Sans',
-    description='Salesforce Marketing Cloud Fuel SDK for Python',
+    name='Fever-FuelSDK',
+    description='Fever Salesforce Marketing Cloud Fuel SDK for Python',
     long_description=readme,
     long_description_content_type="text/markdown",
-    author='Seahawks8',
+    author='Feverup',
     py_modules=['ET_Client'],
     python_requires='>=3',
     packages=['FuelSDK'],
-    url='https://github.com/seahawks8/FuelSDK-Python',
+    url='https://github.com/Feverup/FuelSDK-Python',
     license='MIT',
     install_requires=PACKAGE_INSTALL_REQUIRES,
     classifiers=[
